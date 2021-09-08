@@ -389,6 +389,18 @@
                     </li>
                 </ul>
             </section>
+            <section class="mailing">
+                <p class="footer-third-title">Подпишитесь на рассылку</p>
+                <form action="">
+                    <input type="email" name="user-mail" class="footer-mailing-input" placeholder="E-mail">
+                    <button type="submit" class="footer-mailing-btn button">Подписаться
+                        <svg width="24" height="24">
+                            <use href="./images/sprite.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
+                    
+            </section>
         </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -399,7 +411,7 @@
                 </svg>
             </button>
             <form action="" class="modal-form">
-                <p></p>
+                <p class="modal-form-title">Оставьте свои данные, мы вам перезвоним</p>
                 <label class="modal-form-field">
                     Имя
                     <span class="modal-form-wrapper">
@@ -432,10 +444,21 @@
                     Комментарий
                     <textarea name="user-comment" class="modal-form-comment" placeholder="Введите текст"></textarea>
                 </label>
-                <input type="checkbox" id="user-vote" name="user-agreement" class="modal-user-agreement">
-                <label for="user-vote" class="modal-form-check">Соглашаюсь с рассылкой и принимаю
-                    <a href="">Условия договора</a></label>
-                <button type="submit" class="modal-form-btn">Отправить</button>
+                <input type="checkbox" id="user-vote" name="user-agreement" class="modal-user-agreement visually-hidden">
+                <label for="user-vote" class="modal-form-check">Соглашаюсь с рассылкой и принимаю&nbsp;
+                    <a href="" class="model-form-link">Условия договора</a></label>
+
+                    <!-- <label for="">
+                        <input type="checkbox" name="user-agreement" class="modal-user-agreement visually-hidden">
+                        <span width="16px" height="15px">
+                            <svg>
+                                <use href="./images/sprite.svg#icon-chek"></use>
+                            </svg>
+                        </span>
+                        <span class="modal-form-check">Соглашаюсь с рассылкой и принимаю&nbsp;
+                            <a href="" class="model-form-link">Условия договора</a></span>
+                    </label> -->
+                <button type="submit" class="modal-form-btn button">Отправить</button>
             </form>
         </div>
     </div>
