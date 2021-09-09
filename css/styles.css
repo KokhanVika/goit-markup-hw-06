@@ -445,9 +445,14 @@ img {
 .mailing {
     min-width: 570px;
 }
+.footer-mailing-form {
+    display: flex;
+    justify-content: space-between;
+}
 .footer-mailing-input {
     min-width: 358px;
     min-height: 50px;
+    border: none;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -614,10 +619,11 @@ img {
     outline: none;
     border-color: var(--accent-color);
 }
-.modal-form-check::before {
+/* -Checkbox через background-image */
+/* .modal-form-check::before {
     content: '';
     display: block;
-    width: 16px;
+    width: 15px;
     height: 15px;
     border: 1px solid #212121;
     border-radius: 2px;
@@ -637,8 +643,26 @@ img {
 .modal-user-agreement:focus + .modal-form-check::before {
     border-color: var(--accent-color);
     
+} */
+/* -Checkbox через sprite */
+.icon-check {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #212121;
+    border-radius: 2px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
+.modal-user-agreement:checked + .modal-form-check > .icon-check {
+    background: var(--accent-color);
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.modal-user-agreement:focus + .modal-form-check > .icon-check {
+    border-color: var(--accent-color);
+}
 .modal-form-check {
     display: flex;
     align-items: center;
@@ -647,11 +671,12 @@ img {
     line-height: 1.71;
     color: var(--main-text-color);
     cursor: pointer;
-    
+    margin-bottom: 30px;
 }
 .model-form-link {
     color: var(--accent-color);
 }
+
 .modal-form-btn {
     min-width: 200px;
     padding: 10px 55px;

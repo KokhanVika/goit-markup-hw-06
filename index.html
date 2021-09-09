@@ -391,7 +391,7 @@
             </section>
             <section class="mailing">
                 <p class="footer-third-title">Подпишитесь на рассылку</p>
-                <form action="">
+                <form class="footer-mailing-form">
                     <input type="email" name="user-mail" class="footer-mailing-input" placeholder="E-mail">
                     <button type="submit" class="footer-mailing-btn button">Подписаться
                         <svg width="24" height="24">
@@ -443,10 +443,15 @@
                     Комментарий
                     <textarea name="user-comment" class="modal-form-comment" placeholder="Введите текст"></textarea>
                 </label>
-                <input type="checkbox" id="user-vote" name="user-agreement" class="modal-user-agreement visually-hidden">
-                <label for="user-vote" class="modal-form-check">Соглашаюсь с рассылкой и принимаю&nbsp;
+                    <input type="checkbox" id="user-vote" name="user-agreement" class="modal-user-agreement visually-hidden">
+                    <label for="user-vote" class="modal-form-check">
+                        <span class="icon-check">
+                            <svg width="11px" height="8px">
+                                <use href="./images/sprite.svg#icon-check"></use>
+                            </svg>
+                        </span> 
+                        Соглашаюсь с рассылкой и принимаю&nbsp;
                     <a href="" class="model-form-link">Условия договора</a></label>
-
                 <button type="submit" class="modal-form-btn button">Отправить</button>
             </form>
         </div>
