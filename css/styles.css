@@ -654,6 +654,9 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 250ms var(--timing-function),
+                box-shadow 250ms var(--timing-function),
+                border-color 250ms var(--timing-function) ;
 }
 .modal-user-agreement:checked + .modal-form-check > .icon-check {
     background: var(--accent-color);
