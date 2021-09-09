@@ -625,7 +625,7 @@ img {
     transition: background-color 250ms var(--timing-function),
                 border-color 250ms var(--timing-function),
                 box-shadow 250ms var(--timing-function);
-}
+} 
 .modal-user-agreement:checked + .modal-form-check::before {
     background-color: var(--accent-color);
     background-image: url(../images/modal/icon-check.svg);
@@ -638,6 +638,7 @@ img {
     border-color: var(--accent-color);
     
 }
+
 .modal-form-check {
     display: flex;
     align-items: center;
@@ -645,8 +646,8 @@ img {
     font-size: 14px;
     line-height: 1.71;
     color: var(--main-text-color);
-    margin-bottom: 30px;
     cursor: pointer;
+    
 }
 .model-form-link {
     color: var(--accent-color);
