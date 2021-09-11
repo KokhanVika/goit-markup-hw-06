@@ -413,6 +413,7 @@ img {
     margin-bottom: 9px;
 }
 .contacts {
+    min-width: 230px;
     margin-right: 70px;
 }
 .social {
@@ -458,6 +459,7 @@ img {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background-color: var(--primery-bg-color);
+    color: var(--third-text-color);
     padding: 15px 16px;
     transition: border-color 250ms var(--timing-function);
     margin-right: 12px;
@@ -543,6 +545,9 @@ img {
     border-radius: 50%;
     background-color: var(--bg-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
+    
+}
+.modal-icon {
     transition: fill 250ms var(--timing-function);
 }
 .modal-btn:hover .modal-icon,
@@ -564,10 +569,12 @@ img {
 
 }
 .modal-form-field {
+    position: relative;
     font-weight: normal;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
+    margin-bottom: 10px;
 }
 .modal-form-input {
     width: 100%;
@@ -583,10 +590,9 @@ img {
     border-color: var(--accent-color);
 }
 .modal-form-wrapper {
-    position: relative;
+    
     display: block;
     margin-top: 4px;
-    margin-bottom: 10px;
 }
 .modal-form-icon {
     position: absolute;
@@ -598,6 +604,9 @@ img {
 .modal-form-input:focus + .modal-form-icon {
     fill: var(--accent-color);
 }
+.modal-form-field.comment {
+    margin-bottom: 20px;
+}
 .modal-form-comment {
     width: 100%;
     height: 120px;
@@ -606,7 +615,6 @@ img {
     padding: 12px 16px;
     resize: none;
     margin-top: 4px;
-    margin-bottom: 20px;
     transition: border-color 250ms var(--timing-function);
 }
 .modal-form-comment::placeholder {
@@ -656,12 +664,15 @@ img {
     justify-content: center;
     transition: background-color 250ms var(--timing-function),
                 box-shadow 250ms var(--timing-function),
-                border-color 250ms var(--timing-function) ;
+                /* border-color 250ms var(--timing-function); */
 }
 .modal-user-agreement:checked + .modal-form-check > .icon-check {
     background: var(--accent-color);
     border: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.modal-form-check > .icon-check {
+    transition:border-color 250ms var(--timing-function) ;
 }
 .modal-user-agreement:focus + .modal-form-check > .icon-check {
     border-color: var(--accent-color);
