@@ -569,7 +569,6 @@ img {
 
 }
 .modal-form-field {
-    position: relative;
     font-weight: normal;
     font-size: 12px;
     line-height: 1.17;
@@ -590,7 +589,7 @@ img {
     border-color: var(--accent-color);
 }
 .modal-form-wrapper {
-    
+    position: relative;
     display: block;
     margin-top: 4px;
 }
